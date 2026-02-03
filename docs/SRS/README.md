@@ -12,7 +12,6 @@
 - Constraints
 
 ## 3. Functional Requirements
-## 3. Functional Requirements
 
 FR-01: User Registration  
 The system shall allow users to register using email and password.
@@ -45,7 +44,6 @@ FR-10: Notifications
 The system shall notify users about invitations and updates.
 
 
-## 4. Non-Functional Requirements
 ## 4. Non-Functional Requirements
 
 NFR-01: Performance  
