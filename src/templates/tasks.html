@@ -1,12 +1,27 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tasks</title>
+</head>
+<body>
+    <h1>Tasks</h1>
 
-{% block content %}
-<h2>Tasks</h2>
-<ul>
-    {% for task in tasks %}
-    <li>
-        <strong>{{ task.title }}</strong> — assigned to {{ task.assigned_to }}
-    </li>
-    {% endfor %}
-</ul>
-{% endblock %}
+    <form method="POST">
+        <input type="text" name="title" placeholder="Task title" required>
+        <input type="text" name="assigned_to" placeholder="Assigned to" required>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <hr>
+
+    <ul>
+        {% for task in tasks %}
+            <li>
+                {{ task.title }} — <b>{{ task.assigned_to }}</b>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Back to Home</a>
+</body>
+</html>
