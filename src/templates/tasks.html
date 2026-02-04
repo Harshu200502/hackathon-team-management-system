@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Tasks</h2>
+<ul>
+    {% for task in tasks %}
+    <li>
+        <strong>{{ task.title }}</strong> — assigned to {{ task.assigned_to }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
