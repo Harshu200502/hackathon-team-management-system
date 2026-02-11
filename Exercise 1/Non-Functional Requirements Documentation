@@ -1,0 +1,51 @@
+## Non-Functional Requirements Documentation
+
+This section documents the **Non-Functional Requirements (NFRs)** of the **Hackathon Team Management System**. These requirements define the quality attributes and constraints of the system.
+
+---
+
+### NFR-01: Performance
+**Description:**  
+The system shall respond to user actions within an acceptable time limit.
+
+**Specification:**  
+- Page load time should not exceed 3 seconds under normal usage  
+- System should support multiple users accessing concurrently  
+
+---
+
+### NFR-02: Security
+**Description:**  
+The system shall ensure secure access and protect user data.
+
+**Specification:**  
+- User authentication is mandatory for accessing system features  
+- User credentials must not be visible or stored in plain text  
+- Unauthorized users should not access restricted functionalities  
+
+---
+
+### NFR-03: Usability
+**Description:**  
+The system shall be easy to use and understand for all users.
+
+**Specification:**  
+- User interface should be simple and intuitive  
+- Basic operations should be performed without prior training  
+- Clear messages should be displayed for errors and confirmations  
+
+---
+
+### NFR-04: Reliability
+**Description:**  
+The system shall operate reliably during normal usage.
+
+**Specification:**  
+- System should handle invalid inputs without crashing  
+- Data should be stored correctly and consistently  
+- System should be available during the hackathon event duration  
+
+---
+
+> 📌 **Note:**  
+> These non-functional requirements ensure the system meets quality, security, and usability expectations.
