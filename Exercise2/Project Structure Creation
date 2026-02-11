@@ -1,0 +1,43 @@
+## Project Structure Creation
+
+This section describes the creation of the project structure within the selected CASE tool for the **Hackathon Team Management System**.
+
+---
+
+### Project Initialization
+
+- Open the CASE tool (StarUML / Visual Paradigm).
+- Create a **New Project**.
+- Name the project: `Hackathon Team Management System`.
+- Save the project file in the designated team workspace folder.
+
+---
+
+### Project Organization
+
+The project was structured into organized packages to maintain clarity and modularity:
+
+- **Requirements**
+  - Use Case Diagram
+  - Use Case Descriptions
+
+- **Design**
+  - Class Diagram
+  - Sequence Diagrams
+  - Activity Diagrams
+
+- **System Architecture**
+  - High-Level Architecture Diagram
+  - Component Diagram (if applicable)
+
+---
+
+### Naming Conventions
+
+- Clear and consistent diagram names were used.
+- Packages were labeled based on their purpose (e.g., Requirements, Design).
+- Version naming format was maintained for updates.
+
+---
+
+> 📌 Note: A well-defined project structure ensures better organization, easy navigation, and maintainability throughout the system development lifecycle.
