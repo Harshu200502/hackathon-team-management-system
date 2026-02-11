@@ -1,0 +1,104 @@
+## Design Document
+### Hackathon Team Management System
+
+---
+
+## 1. Introduction
+This design document explains the key **design decisions** made during the development of the **Hackathon Team Management System**. The goal is to ensure scalability, clarity, maintainability, and ease of use.
+
+---
+
+## 2. Design Goals
+- Simple and intuitive user experience  
+- Clear separation of responsibilities  
+- Scalable architecture for multiple teams and users  
+- Easy mapping to UML diagrams and SRS requirements  
+
+---
+
+## 3. Architectural Design
+
+### 3.1 System Architecture
+The system follows a **layered architecture**:
+- **Presentation Layer:** User Interface (Web pages/forms)
+- **Application Layer:** Business logic and controllers
+- **Data Layer:** Database for persistent storage
+
+**Reasoning:**  
+This separation improves maintainability, testing, and future enhancements.
+
+---
+
+## 4. Design Decisions
+
+### 4.1 User Role-Based Design
+Users are categorized as:
+- Student
+- Team Leader
+- Admin
+
+**Reasoning:**  
+Role-based access ensures security and clear responsibility boundaries.
+
+---
+
+### 4.2 Object-Oriented Design
+Key entities such as `User`, `Team`, `Invitation`, and `Role` are modeled as classes.
+
+**Reasoning:**  
+Object-oriented design supports reuse, inheritance, and easier UML representation.
+
+---
+
+### 4.3 Inheritance Usage
+- `Student`, `TeamLeader`, and `Admin` inherit from `User`
+
+**Reasoning:**  
+Avoids duplication of common attributes like login credentials and profile data.
+
+---
+
+### 4.4 Centralized Team Management
+All team-related operations are handled through the `Team` class.
+
+**Reasoning:**  
+Ensures consistency and simplifies team-related workflows.
+
+---
+
+## 5. UML Design Choices
+
+### 5.1 Use Case Diagrams
+Used to capture system functionality from the user’s perspective.
+
+### 5.2 Class Diagrams
+Used to represent static structure, attributes, methods, and relationships.
+
+### 5.3 Sequence Diagrams
+Used to show interaction flow and message exchange between objects.
+
+### 5.4 Activity Diagrams
+Used to represent workflows with decision points and parallel actions.
+
+---
+
+## 6. Technology Considerations
+- Web-based platform for easy accessibility
+- UML tools (StarUML / Visual Paradigm) for modeling
+
+---
+
+## 7. Assumptions
+- Users have basic technical knowledge
+- Internet connectivity is available
+- Hackathon rules define team size limits
+
+---
+
+## 8. Conclusion
+The design decisions ensure a **structured, scalable, and maintainable system** that aligns with the project requirements and supports efficient hackathon team management.
+
+---
+
+**Document Status:** Final  
+**Version:** 1.0
